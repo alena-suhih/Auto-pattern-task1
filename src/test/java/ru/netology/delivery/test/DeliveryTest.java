@@ -17,13 +17,6 @@ import static com.codeborne.selenide.Selenide.open;
 
 class DeliveryTest {
 
-    private static Faker faker;
-
-    @BeforeAll
-    static void setUpAll() {
-        faker = new Faker(new Locale("ru"));
-    }
-
     @BeforeEach
     void setup() {
         open("http://localhost:9999");
